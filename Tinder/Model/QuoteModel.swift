@@ -2,7 +2,7 @@
 //  QuoteModel.swift
 //  Tinder
 //
-//  Created by G4 tech on 28/02/22.
+//  Created by Rodrigo Vart on 28/02/22.
 //
 
 import Foundation

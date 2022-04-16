@@ -2,7 +2,7 @@
 //  CombineCardView.swift
 //  Tinder
 //  text: "Gosto de gatos e cachorros 🙀🐶🐾"
-//  Created by G4 tech on 27/02/22.
+//  Created by Rodrigo Vart on 27/02/22.
 //
 
 import Foundation

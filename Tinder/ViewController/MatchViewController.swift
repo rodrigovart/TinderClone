@@ -2,7 +2,7 @@
 //  MatchViewController.swift
 //  Tinder
 //
-//  Created by G4 tech on 13/03/22.
+//  Created by Rodrigo Vart on 13/03/22.
 //
 
 import Foundation

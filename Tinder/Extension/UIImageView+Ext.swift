@@ -2,7 +2,7 @@
 //  UIImageView+Ext.swift
 //  Tinder
 //
-//  Created by G4 tech on 01/03/22.
+//  Created by Rodrigo Vart on 01/03/22.
 //
 
 import Foundation

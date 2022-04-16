@@ -2,7 +2,7 @@
 //  UIView+Ext.swift
 //  Tinder
 //
-//  Created by G4 tech on 27/02/22.
+//  Created by Rodrigo Vart on 27/02/22.
 //
 
 import UIKit
