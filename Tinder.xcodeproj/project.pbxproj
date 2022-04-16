@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		7B1EEB211CA13BB495121E10 /* Pods_Tinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3503EC4D9A1E7B2C3A6BC7E6 /* Pods_Tinder.framework */; };
+		9D50A94D280A662000E6CC9A /* DetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D50A94C280A662000E6CC9A /* DetailHeaderView.swift */; };
+		9D50A950280A68F100E6CC9A /* HeaderDetailViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D50A94F280A68F100E6CC9A /* HeaderDetailViewLayout.swift */; };
+		9D50A952280A6B1500E6CC9A /* DetailPersonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D50A951280A6B1500E6CC9A /* DetailPersonCell.swift */; };
+		9D50A954280A78BF00E6CC9A /* DetailPhotosPersonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D50A953280A78BF00E6CC9A /* DetailPhotosPersonCell.swift */; };
+		9D50A966280A8E9000E6CC9A /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D50A955280A7FC100E6CC9A /* Bolts.framework */; };
+		9D50A969280A8E9200E6CC9A /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D50A957280A7FE300E6CC9A /* FBSDKCoreKit.framework */; };
+		9D50A96B280A8E9300E6CC9A /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D50A964280A8D6600E6CC9A /* FBSDKLoginKit.framework */; };
+		9D50A96D280A8E9600E6CC9A /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D50A959280A7FF200E6CC9A /* FBSDKShareKit.framework */; };
+		9D50A972280AAC5400E6CC9A /* InstagramService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D50A971280AAC5400E6CC9A /* InstagramService.swift */; };
 		A504FDE627CC44ED00A26AAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A504FDE527CC44ED00A26AAD /* AppDelegate.swift */; };
 		A504FDE827CC44ED00A26AAD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A504FDE727CC44ED00A26AAD /* SceneDelegate.swift */; };
 		A504FDEA27CC44ED00A26AAD /* CombineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A504FDE927CC44ED00A26AAD /* CombineViewController.swift */; };
@@ -31,6 +40,17 @@
 
 /* Begin PBXFileReference section */
 		3503EC4D9A1E7B2C3A6BC7E6 /* Pods_Tinder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tinder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D50A94C280A662000E6CC9A /* DetailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHeaderView.swift; sourceTree = "<group>"; };
+		9D50A94F280A68F100E6CC9A /* HeaderDetailViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderDetailViewLayout.swift; sourceTree = "<group>"; };
+		9D50A951280A6B1500E6CC9A /* DetailPersonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPersonCell.swift; sourceTree = "<group>"; };
+		9D50A953280A78BF00E6CC9A /* DetailPhotosPersonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPhotosPersonCell.swift; sourceTree = "<group>"; };
+		9D50A955280A7FC100E6CC9A /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../../Downloads/FacebookSDKs-iOS-4.40.0/Bolts.framework"; sourceTree = "<group>"; };
+		9D50A957280A7FE300E6CC9A /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = "../../../Downloads/FacebookSDKs-iOS-4.40.0/FBSDKCoreKit.framework"; sourceTree = "<group>"; };
+		9D50A959280A7FF200E6CC9A /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = "../../../Downloads/FacebookSDKs-iOS-4.40.0/FBSDKShareKit.framework"; sourceTree = "<group>"; };
+		9D50A961280A8BA600E6CC9A /* Tinder-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tinder-Bridging-Header.h"; sourceTree = "<group>"; };
+		9D50A964280A8D6600E6CC9A /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "../../../Downloads/FacebookSDKs-iOS-4.40.0/FBSDKLoginKit.framework"; sourceTree = "<group>"; };
+		9D50A96F280A965000E6CC9A /* Tinder.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Tinder.entitlements; sourceTree = "<group>"; };
+		9D50A971280AAC5400E6CC9A /* InstagramService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramService.swift; sourceTree = "<group>"; };
 		A504FDE227CC44ED00A26AAD /* Tinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A504FDE527CC44ED00A26AAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A504FDE727CC44ED00A26AAD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +84,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D50A969280A8E9200E6CC9A /* FBSDKCoreKit.framework in Frameworks */,
+				9D50A966280A8E9000E6CC9A /* Bolts.framework in Frameworks */,
+				9D50A96D280A8E9600E6CC9A /* FBSDKShareKit.framework in Frameworks */,
+				9D50A96B280A8E9300E6CC9A /* FBSDKLoginKit.framework in Frameworks */,
 				7B1EEB211CA13BB495121E10 /* Pods_Tinder.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -78,6 +102,14 @@
 				B2DE3A0B936FCB964EC050B7 /* Pods-Tinder.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		9D50A94E280A68C600E6CC9A /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				9D50A94F280A68F100E6CC9A /* HeaderDetailViewLayout.swift */,
+			);
+			path = Layout;
 			sourceTree = "<group>";
 		};
 		A504FDD927CC44ED00A26AAD = {
@@ -101,19 +133,21 @@
 		A504FDE427CC44ED00A26AAD /* Tinder */ = {
 			isa = PBXGroup;
 			children = (
+				9D50A96F280A965000E6CC9A /* Tinder.entitlements */,
 				A571EFF927DEDA4100426E82 /* Files */,
 				A504FE0627CC7B2400A26AAD /* Service */,
 				A504FE0327CC799400A26AAD /* Model */,
 				A504FDFE27CC6AD400A26AAD /* View */,
 				A504FDFD27CC632D00A26AAD /* ViewController */,
 				A504FDF927CC527F00A26AAD /* Extension */,
-				A504FDE527CC44ED00A26AAD /* AppDelegate.swift */,
 				A504FDE727CC44ED00A26AAD /* SceneDelegate.swift */,
+				A504FDE527CC44ED00A26AAD /* AppDelegate.swift */,
 				A504FDEB27CC44ED00A26AAD /* Main.storyboard */,
 				A504FDEE27CC44EF00A26AAD /* Assets.xcassets */,
 				A504FDF027CC44EF00A26AAD /* LaunchScreen.storyboard */,
 				A504FDF327CC44EF00A26AAD /* Info.plist */,
 				A504FDFC27CC62B400A26AAD /* Legado.md */,
+				9D50A961280A8BA600E6CC9A /* Tinder-Bridging-Header.h */,
 			);
 			path = Tinder;
 			sourceTree = "<group>";
@@ -143,8 +177,12 @@
 		A504FDFE27CC6AD400A26AAD /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9D50A94E280A68C600E6CC9A /* Layout */,
 				A504FDFF27CC6AEB00A26AAD /* CombineCardView.swift */,
 				A598F0A927DDB4FE000C295C /* LoadingView.swift */,
+				9D50A94C280A662000E6CC9A /* DetailHeaderView.swift */,
+				9D50A951280A6B1500E6CC9A /* DetailPersonCell.swift */,
+				9D50A953280A78BF00E6CC9A /* DetailPhotosPersonCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -163,6 +201,7 @@
 			children = (
 				A504FE0727CC7B3E00A26AAD /* UserService.swift */,
 				A504FE0D27CC949C00A26AAD /* QuoteService.swift */,
+				9D50A971280AAC5400E6CC9A /* InstagramService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -179,6 +218,10 @@
 			isa = PBXGroup;
 			children = (
 				3503EC4D9A1E7B2C3A6BC7E6 /* Pods_Tinder.framework */,
+				9D50A955280A7FC100E6CC9A /* Bolts.framework */,
+				9D50A957280A7FE300E6CC9A /* FBSDKCoreKit.framework */,
+				9D50A959280A7FF200E6CC9A /* FBSDKShareKit.framework */,
+				9D50A964280A8D6600E6CC9A /* FBSDKLoginKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -217,6 +260,7 @@
 				TargetAttributes = {
 					A504FDE127CC44ED00A26AAD = {
 						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1320;
 					};
 				};
 			};
@@ -229,6 +273,8 @@
 				Base,
 			);
 			mainGroup = A504FDD927CC44ED00A26AAD;
+			packageReferences = (
+			);
 			productRefGroup = A504FDE327CC44ED00A26AAD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -298,13 +344,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D50A952280A6B1500E6CC9A /* DetailPersonCell.swift in Sources */,
 				A5480B6D27CEFAAA00C6ACA2 /* UIImageView+Ext.swift in Sources */,
 				A504FE0C27CC93F200A26AAD /* QuoteModel.swift in Sources */,
 				A504FDFB27CC529C00A26AAD /* UIView+Ext.swift in Sources */,
 				A504FE0527CC79B300A26AAD /* UserModel.swift in Sources */,
+				9D50A950280A68F100E6CC9A /* HeaderDetailViewLayout.swift in Sources */,
 				A504FDEA27CC44ED00A26AAD /* CombineViewController.swift in Sources */,
+				9D50A94D280A662000E6CC9A /* DetailHeaderView.swift in Sources */,
 				A598F0AA27DDB4FE000C295C /* LoadingView.swift in Sources */,
 				A504FE0E27CC949C00A26AAD /* QuoteService.swift in Sources */,
+				9D50A954280A78BF00E6CC9A /* DetailPhotosPersonCell.swift in Sources */,
 				A504FE0A27CC8C4E00A26AAD /* Data+Ext.swift in Sources */,
 				A54EC05627DEF07700DE7FBF /* DetailsPersonViewController.swift in Sources */,
 				A504FE0027CC6AEB00A26AAD /* CombineCardView.swift in Sources */,
@@ -313,6 +363,7 @@
 				A598F0A627DD7672000C295C /* UIButton+Ext.swift in Sources */,
 				A504FDE627CC44ED00A26AAD /* AppDelegate.swift in Sources */,
 				A504FE0227CC73BD00A26AAD /* UILabel+Ext.swift in Sources */,
+				9D50A972280AAC5400E6CC9A /* InstagramService.swift in Sources */,
 				A504FDE827CC44ED00A26AAD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -395,6 +446,8 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				"OTHER_LDFLAGS[arch=*]" = Objc;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -449,6 +502,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				"OTHER_LDFLAGS[arch=*]" = Objc;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -463,10 +518,18 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Tinder/Tinder.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = DF29HPDVWS;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Alamofire\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftMessages\"",
+					"/Users/rodrigovart/Downloads/FacebookSDKs-iOS-4.40.0/**",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Tinder/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -480,10 +543,13 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.rodrigovart.Tinder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Tinder/Tinder-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -496,10 +562,18 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Tinder/Tinder.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = DF29HPDVWS;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Alamofire\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftMessages\"",
+					"/Users/rodrigovart/Downloads/FacebookSDKs-iOS-4.40.0",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Tinder/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -513,10 +587,12 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.rodrigovart.Tinder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Tinder/Tinder-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -7,6 +7,7 @@
 
 import UIKit
 import SwiftMessages
+import FBSDKLoginKit
 
 enum Action {
     case like
@@ -32,18 +33,18 @@ class CombineViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         navigationController?.navigationBar.isHidden = true
         view.backgroundColor = UIColor.systemGroupedBackground
-  
-        loading = LoadingView(frame: view.frame)
-        view.insertSubview(loading, at: 0)
         
-        getUsers()
-        getQuotes()
+       loading = LoadingView(frame: view.frame)
+       view.insertSubview(loading, at: 0)
         
-        addHeaders()
-        addFooter()
+       getUsers()
+       getQuotes()
+        
+       addHeaders()
+       addFooter()
     }
     
     func getUsers() {
@@ -237,21 +238,21 @@ extension CombineViewController {
             // Instantiate a message view from the provided card view layout. SwiftMessages searches for nib
             // files in the main bundle first, so you can easily copy them into your project and make changes.
             let view = MessageView.viewFromNib(layout: .centeredView)
-
+            
             // Theme message elements with the warning style.
             view.configureTheme(.success)
-
+            
             // Add a drop shadow.
             view.configureDropShadow()
-
+            
             // Set message title, body, and icon. Here, we're overriding the default warning
             // image with an emoji character.
             view.configureContent(title: "IT`S A MATCH", body: "", iconText: "😳")
-
+            
             // Increase the external margin around the card. In general, the effect of this setting
             // depends on how the given layout is constrained to the layout margins.
             view.layoutMarginAdditions = UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
-
+            
             // Reduce the corner radius (applicable to layouts featuring rounded corners).
             (view.backgroundView as? CornerRoundingView)?.cornerRadius = 10
             view.button?.isHidden = true
@@ -259,7 +260,7 @@ extension CombineViewController {
             // Customize config using the default as a base.
             var config = SwiftMessages.defaultConfig
             config.duration = .seconds(seconds: 2)
-           
+            
             // Show the message.
             SwiftMessages.show(config: config, view: view)
             
@@ -274,7 +275,7 @@ extension CombineViewController {
 
 extension CombineViewController {
     func showDetailsUser(_ user: User) {
-        let detailVC = MatchViewController()
+        let detailVC = DetailsPersonViewController()
         detailVC.modalPresentationStyle = .fullScreen
         detailVC.user = user
         

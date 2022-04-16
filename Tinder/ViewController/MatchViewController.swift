@@ -128,7 +128,7 @@ class MatchViewController: UIViewController {
             leading: nil,
             trailing: view.trailingAnchor,
             bottom: nil,
-            padding: UIEdgeInsets(top: 20, left: 0, bottom: -10, right: -10)
+            padding: UIEdgeInsets(top: 50, left: 0, bottom: -10, right: -10)
         )
     }
     

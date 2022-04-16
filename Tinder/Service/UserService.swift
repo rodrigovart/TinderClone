@@ -14,8 +14,8 @@ class UserService {
     
     func searchUsers(completion: @escaping ([User]) -> Void) {
         AF.request("https://randomuser.me/api?results=20&nat=br&inc=name,dob&gender=female&noinfo").responseDecodable(of: UserResults.self) { response in
-//            guard let randomPersons = response.value?.results else { return }
-            completion(response.value!.results)
+            guard let randomPersons = response.value?.results else { return }
+            completion(randomPersons)
         }
     }
 }
