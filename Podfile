@@ -8,4 +8,5 @@ target 'Tinder' do
   # Pods for Tinder
   pod 'Alamofire'
   pod 'SwiftMessages'
+  pod 'SDWebImage'
 end

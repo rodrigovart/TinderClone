@@ -11,7 +11,7 @@ import UIKit
 extension UILabel {
     static func textLabel(size: CGFloat, textColor: UIColor = .white, numberOfLines: Int = 1) -> UILabel {
         let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: size)
+        label.font = UIFont(name: "Helvetica Neue Medium Extended", size: size)
         label.textColor = textColor
         label.numberOfLines = numberOfLines
         return label
@@ -19,7 +19,7 @@ extension UILabel {
     
     static func textBoldLabel(size: CGFloat, textColor: UIColor = .white, numberOfLines: Int = 1) -> UILabel {
         let label = UILabel()
-        label.font = UIFont.boldSystemFont(ofSize: size)
+        label.font = UIFont(name: "Helvetica Neue Medium Extended", size: size)
         label.textColor = textColor
         label.numberOfLines = numberOfLines
         return label

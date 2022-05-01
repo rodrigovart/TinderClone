@@ -30,7 +30,7 @@ class MatchViewController: UIViewController {
         textfield.translatesAutoresizingMaskIntoConstraints = false
         textfield.heightAnchor.constraint(equalToConstant: 44).isActive = true
         textfield.placeholder = "Diga algo legal...😃"
-        textfield.font = UIFont(name: "HelveticaNeue-Medium", size: 15)
+        textfield.font = UIFont(name: "Helvetica Neue Medium Extended", size: 15)
         textfield.backgroundColor = .white
         textfield.layer.cornerRadius = 8
         textfield.textColor = .darkText
@@ -59,7 +59,7 @@ class MatchViewController: UIViewController {
         let button = UIButton()
         button.setTitle("Enviar", for: .normal)
         button.setTitleColor(UIColor(red: 62/255, green: 163/255, blue: 255/255, alpha: 1), for: .normal)
-        button.titleLabel?.font = UIFont(name: "HelveticaNeue-Medium", size: 15)
+        button.titleLabel?.font = UIFont(name: "Helvetica Neue Medium Extended", size: 15)
         button.addTarget(self, action: #selector(sendMessage), for: .touchUpInside)
         
         return button
@@ -91,7 +91,7 @@ class MatchViewController: UIViewController {
         photoPersonMatch.fillSuperView()
         
         message.textColor = .white
-        message.font = UIFont(name: "HelveticaNeue-Medium", size: 15)
+        message.font = UIFont(name: "Helvetica Neue Medium Extended", size: 15)
         message.textAlignment = .center
         
         messageTextField.addSubview(buttonSendMessage)

@@ -17,6 +17,9 @@
 		9D50A96B280A8E9300E6CC9A /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D50A964280A8D6600E6CC9A /* FBSDKLoginKit.framework */; };
 		9D50A96D280A8E9600E6CC9A /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D50A959280A7FF200E6CC9A /* FBSDKShareKit.framework */; };
 		9D50A972280AAC5400E6CC9A /* InstagramService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D50A971280AAC5400E6CC9A /* InstagramService.swift */; };
+		9D98D510281E24420043C18B /* InstagramModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D98D50F281E24420043C18B /* InstagramModel.swift */; };
+		9D98D512281E37E50043C18B /* SliderPhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D98D511281E37E50043C18B /* SliderPhotosViewController.swift */; };
+		9D98D514281E3EDB0043C18B /* SliderPhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D98D513281E3EDB0043C18B /* SliderPhotoCell.swift */; };
 		A504FDE627CC44ED00A26AAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A504FDE527CC44ED00A26AAD /* AppDelegate.swift */; };
 		A504FDE827CC44ED00A26AAD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A504FDE727CC44ED00A26AAD /* SceneDelegate.swift */; };
 		A504FDEA27CC44ED00A26AAD /* CombineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A504FDE927CC44ED00A26AAD /* CombineViewController.swift */; };
@@ -51,6 +54,10 @@
 		9D50A964280A8D6600E6CC9A /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "../../../Downloads/FacebookSDKs-iOS-4.40.0/FBSDKLoginKit.framework"; sourceTree = "<group>"; };
 		9D50A96F280A965000E6CC9A /* Tinder.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Tinder.entitlements; sourceTree = "<group>"; };
 		9D50A971280AAC5400E6CC9A /* InstagramService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramService.swift; sourceTree = "<group>"; };
+		9D98D50F281E24420043C18B /* InstagramModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramModel.swift; sourceTree = "<group>"; };
+		9D98D511281E37E50043C18B /* SliderPhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderPhotosViewController.swift; sourceTree = "<group>"; };
+		9D98D513281E3EDB0043C18B /* SliderPhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderPhotoCell.swift; sourceTree = "<group>"; };
+		9D98D519281E47170043C18B /* Helvetica Neue Medium Extended.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Helvetica Neue Medium Extended.ttf"; sourceTree = "<group>"; };
 		A504FDE227CC44ED00A26AAD /* Tinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A504FDE527CC44ED00A26AAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A504FDE727CC44ED00A26AAD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,7 +78,6 @@
 		A5480B6C27CEFAAA00C6ACA2 /* UIImageView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Ext.swift"; sourceTree = "<group>"; };
 		A54EC05527DEF07700DE7FBF /* DetailsPersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsPersonViewController.swift; sourceTree = "<group>"; };
 		A571EFF727DED28900426E82 /* MatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchViewController.swift; sourceTree = "<group>"; };
-		A571EFFA27DEDA9A00426E82 /* Helvetica Neue Medium Extended.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Helvetica Neue Medium Extended.ttf"; path = "Tinder/Helvetica-Neue-Font/Helvetica Neue Medium Extended/Helvetica Neue Medium Extended.ttf"; sourceTree = SOURCE_ROOT; };
 		A598F0A527DD7672000C295C /* UIButton+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Ext.swift"; sourceTree = "<group>"; };
 		A598F0A827DDB483000C295C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		A598F0A927DDB4FE000C295C /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
@@ -170,6 +176,7 @@
 				A504FDE927CC44ED00A26AAD /* CombineViewController.swift */,
 				A571EFF727DED28900426E82 /* MatchViewController.swift */,
 				A54EC05527DEF07700DE7FBF /* DetailsPersonViewController.swift */,
+				9D98D511281E37E50043C18B /* SliderPhotosViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -183,6 +190,7 @@
 				9D50A94C280A662000E6CC9A /* DetailHeaderView.swift */,
 				9D50A951280A6B1500E6CC9A /* DetailPersonCell.swift */,
 				9D50A953280A78BF00E6CC9A /* DetailPhotosPersonCell.swift */,
+				9D98D513281E3EDB0043C18B /* SliderPhotoCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -192,6 +200,7 @@
 			children = (
 				A504FE0427CC79B300A26AAD /* UserModel.swift */,
 				A504FE0B27CC93F200A26AAD /* QuoteModel.swift */,
+				9D98D50F281E24420043C18B /* InstagramModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -209,7 +218,7 @@
 		A571EFF927DEDA4100426E82 /* Files */ = {
 			isa = PBXGroup;
 			children = (
-				A571EFFA27DEDA9A00426E82 /* Helvetica Neue Medium Extended.ttf */,
+				9D98D519281E47170043C18B /* Helvetica Neue Medium Extended.ttf */,
 			);
 			path = Files;
 			sourceTree = "<group>";
@@ -347,7 +356,9 @@
 				9D50A952280A6B1500E6CC9A /* DetailPersonCell.swift in Sources */,
 				A5480B6D27CEFAAA00C6ACA2 /* UIImageView+Ext.swift in Sources */,
 				A504FE0C27CC93F200A26AAD /* QuoteModel.swift in Sources */,
+				9D98D512281E37E50043C18B /* SliderPhotosViewController.swift in Sources */,
 				A504FDFB27CC529C00A26AAD /* UIView+Ext.swift in Sources */,
+				9D98D514281E3EDB0043C18B /* SliderPhotoCell.swift in Sources */,
 				A504FE0527CC79B300A26AAD /* UserModel.swift in Sources */,
 				9D50A950280A68F100E6CC9A /* HeaderDetailViewLayout.swift in Sources */,
 				A504FDEA27CC44ED00A26AAD /* CombineViewController.swift in Sources */,
@@ -364,6 +375,7 @@
 				A504FDE627CC44ED00A26AAD /* AppDelegate.swift in Sources */,
 				A504FE0227CC73BD00A26AAD /* UILabel+Ext.swift in Sources */,
 				9D50A972280AAC5400E6CC9A /* InstagramService.swift in Sources */,
+				9D98D510281E24420043C18B /* InstagramModel.swift in Sources */,
 				A504FDE827CC44ED00A26AAD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

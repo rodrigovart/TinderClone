@@ -16,7 +16,7 @@ enum Action {
 }
 
 class CombineViewController: UIViewController {
-    
+
     var loading = LoadingView()
     
     var users: [User] = []
