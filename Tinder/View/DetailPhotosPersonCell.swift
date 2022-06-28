@@ -11,18 +11,17 @@ import UIKit
 
 class DetailPhotosPersonCell: UICollectionViewCell {
     
+    let sliderVC = SliderPhotosViewController()
     let descriptionLabel: UILabel = .textBoldLabel(size: 16, textColor: .darkGray)
-    var Instagram: [Instagram] = []
     var photos = ""
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
-        getInstagramPhotos()
+        setupView()
     }
     
     func setupView() {
-        descriptionLabel.text = "Fotos recentes Instagram"
+        descriptionLabel.text = "Fotos recentes"
         
         addSubview(descriptionLabel)
         descriptionLabel.fillView(
@@ -30,12 +29,9 @@ class DetailPhotosPersonCell: UICollectionViewCell {
             leading: leadingAnchor,
             trailing: trailingAnchor,
             bottom: nil,
-            padding: .init(top: 0, left: 20, bottom: -20, right: -20)
+            padding: .init(top: 0, left: 20, bottom: 10, right: -20)
         )
-        
-        let sliderVC = SliderPhotosViewController()
-        sliderVC.instagramPhotos = Instagram
-        
+
         addSubview(sliderVC.view)
         sliderVC.view.fillView(
             top: descriptionLabel.bottomAnchor,
@@ -43,13 +39,6 @@ class DetailPhotosPersonCell: UICollectionViewCell {
             trailing: trailingAnchor,
             bottom: bottomAnchor
         )
-    }
-    
-    func getInstagramPhotos() {
-        InstagramService.shared.getInstagramMedia { result in
-            self.Instagram.append(contentsOf: result)
-            self.setupView()
-        }
     }
     
     required init?(coder: NSCoder) {

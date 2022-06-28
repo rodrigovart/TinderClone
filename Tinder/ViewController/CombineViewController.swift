@@ -7,7 +7,6 @@
 
 import UIKit
 import SwiftMessages
-import FBSDKLoginKit
 
 enum Action {
     case like
@@ -16,7 +15,7 @@ enum Action {
 }
 
 class CombineViewController: UIViewController {
-
+    
     var loading = LoadingView()
     
     var users: [User] = []
@@ -33,18 +32,18 @@ class CombineViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         navigationController?.navigationBar.isHidden = true
         view.backgroundColor = UIColor.systemGroupedBackground
         
-       loading = LoadingView(frame: view.frame)
-       view.insertSubview(loading, at: 0)
+        loading = LoadingView(frame: view.frame)
+        view.insertSubview(loading, at: 0)
         
-       getUsers()
-       getQuotes()
+        getUsers()
+        getQuotes()
         
-       addHeaders()
-       addFooter()
+        addHeaders()
+        addFooter()
     }
     
     func getUsers() {
@@ -278,6 +277,15 @@ extension CombineViewController {
         let detailVC = DetailsPersonViewController()
         detailVC.modalPresentationStyle = .fullScreen
         detailVC.user = user
+        detailVC.callback = {(user, action) in
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                if action == .deslike {
+                    self.deslike()
+                } else {
+                    self.like()
+                }
+            }
+        }
         
         present(detailVC, animated: true, completion: nil)
     }

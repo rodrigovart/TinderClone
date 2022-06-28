@@ -16,8 +16,6 @@
 		9D50A969280A8E9200E6CC9A /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D50A957280A7FE300E6CC9A /* FBSDKCoreKit.framework */; };
 		9D50A96B280A8E9300E6CC9A /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D50A964280A8D6600E6CC9A /* FBSDKLoginKit.framework */; };
 		9D50A96D280A8E9600E6CC9A /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D50A959280A7FF200E6CC9A /* FBSDKShareKit.framework */; };
-		9D50A972280AAC5400E6CC9A /* InstagramService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D50A971280AAC5400E6CC9A /* InstagramService.swift */; };
-		9D98D510281E24420043C18B /* InstagramModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D98D50F281E24420043C18B /* InstagramModel.swift */; };
 		9D98D512281E37E50043C18B /* SliderPhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D98D511281E37E50043C18B /* SliderPhotosViewController.swift */; };
 		9D98D514281E3EDB0043C18B /* SliderPhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D98D513281E3EDB0043C18B /* SliderPhotoCell.swift */; };
 		A504FDE627CC44ED00A26AAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A504FDE527CC44ED00A26AAD /* AppDelegate.swift */; };
@@ -53,8 +51,6 @@
 		9D50A961280A8BA600E6CC9A /* Tinder-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tinder-Bridging-Header.h"; sourceTree = "<group>"; };
 		9D50A964280A8D6600E6CC9A /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "../../../Downloads/FacebookSDKs-iOS-4.40.0/FBSDKLoginKit.framework"; sourceTree = "<group>"; };
 		9D50A96F280A965000E6CC9A /* Tinder.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Tinder.entitlements; sourceTree = "<group>"; };
-		9D50A971280AAC5400E6CC9A /* InstagramService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramService.swift; sourceTree = "<group>"; };
-		9D98D50F281E24420043C18B /* InstagramModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramModel.swift; sourceTree = "<group>"; };
 		9D98D511281E37E50043C18B /* SliderPhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderPhotosViewController.swift; sourceTree = "<group>"; };
 		9D98D513281E3EDB0043C18B /* SliderPhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderPhotoCell.swift; sourceTree = "<group>"; };
 		9D98D519281E47170043C18B /* Helvetica Neue Medium Extended.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Helvetica Neue Medium Extended.ttf"; sourceTree = "<group>"; };
@@ -200,7 +196,6 @@
 			children = (
 				A504FE0427CC79B300A26AAD /* UserModel.swift */,
 				A504FE0B27CC93F200A26AAD /* QuoteModel.swift */,
-				9D98D50F281E24420043C18B /* InstagramModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -210,7 +205,6 @@
 			children = (
 				A504FE0727CC7B3E00A26AAD /* UserService.swift */,
 				A504FE0D27CC949C00A26AAD /* QuoteService.swift */,
-				9D50A971280AAC5400E6CC9A /* InstagramService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -374,8 +368,6 @@
 				A598F0A627DD7672000C295C /* UIButton+Ext.swift in Sources */,
 				A504FDE627CC44ED00A26AAD /* AppDelegate.swift in Sources */,
 				A504FE0227CC73BD00A26AAD /* UILabel+Ext.swift in Sources */,
-				9D50A972280AAC5400E6CC9A /* InstagramService.swift in Sources */,
-				9D98D510281E24420043C18B /* InstagramModel.swift in Sources */,
 				A504FDE827CC44ED00A26AAD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

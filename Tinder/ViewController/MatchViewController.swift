@@ -133,7 +133,7 @@ class MatchViewController: UIViewController {
     }
     
     @objc func buttonTapped(_ button: UIButton) {
-        self.dismiss(animated: true, completion: nil)
+        dismiss(animated: true, completion: nil)
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -170,8 +170,8 @@ class MatchViewController: UIViewController {
     }
     
     @objc func sendMessage() {
-        if let mesage = messageTextField.text {
-            print(mesage)
+        if let message = messageTextField.text {
+            print(message)
         }
     }
 }

@@ -10,7 +10,19 @@ import UIKit
 class SliderPhotosViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
     let photosID = "photosID"
-    var instagramPhotos: [Instagram] = []
+    
+    let fotos: [String] = [
+        "pessoa-1",
+        "pessoa-2",
+        "pessoa-3",
+        "pessoa-4",
+        "pessoa-5",
+        "pessoa-6",
+        "pessoa-7",
+        "pessoa-8",
+        "pessoa-9",
+        "pessoa-10"
+    ]
     
     init() {
         let layout = UICollectionViewFlowLayout()
@@ -19,31 +31,32 @@ class SliderPhotosViewController: UICollectionViewController, UICollectionViewDe
     }
     
     required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        fatalError()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        collectionView.backgroundColor = .white
-        
+        collectionView.delegate = self
+        collectionView.dataSource = self
         collectionView.register(SliderPhotoCell.self, forCellWithReuseIdentifier: photosID)
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-       return instagramPhotos.count
+        return fotos.count
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: photosID, for: indexPath) as! SliderPhotoCell
-        cell.photoMedia = instagramPhotos[indexPath.item].media_url
-        cell.setupView()
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: photosID, for: indexPath) as? SliderPhotoCell else {
+            return UICollectionViewCell()
+        }
+        cell.photo.image = UIImage(named: fotos[indexPath.item])
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let size = collectionView.bounds.height / 2 - 10
-        return .init(width: size, height: size)
+      let size = collectionView.bounds.height / 2 - 10
+      return .init(width: size, height: size)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
@@ -51,6 +64,6 @@ class SliderPhotosViewController: UICollectionViewController, UICollectionViewDe
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return .init(top: 10, left: 20, bottom: 0, right: -20)
+        return .init(top: 10, left: 20, bottom: 0, right: 20)
     }
 }
